@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Essa Amar</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Essa Amar</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <div class="backk"><img src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\background.png" alt=""> </div>
+
+      <div class="popup">
+        <div class="popup-content">
+  
+          <h1>X</h1>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h2 class="title">Essa Amar</h2>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('C:/Users/ESSA/Desktop/jobintech_portfolio/assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" >
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https:https://ma.linkedin.com/in/essa-amari-88752a252'"
+          />
+          <img
+            src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/ESSA-AMAR/'"
+          />
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1+ years <br />Full Stack Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Technician Diploma <br />specialized in Digital Development</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am a passionate full stack web developer with deep 
+              expertise in development and graphics. My creative profile
+               also extends to photography and videography. This unique 
+               combination of technical and artistic skills fuels my creativity 
+               in every project I tackle, ensuring web solutions that are both 
+               functional and visually appealing.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        
+      />
+    </section>
+
+
+<script>
+  const popup = document.querySelector('.popup');
+  const x = document.querySelector('.popup-content h1')
+
+  window.addEventListener('load', () => {
+      popup.classList.add('showPopup');
+      popup.childNodes[1].classList.add('showPopup');
+  })
+  x.addEventListener('click', () => {
+      popup.classList.remove('showPopup');
+      popup.childNodes[1].classList.remove('showPopup');
+  })
+</script>
+
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tailwind</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">BackEnd Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>laravel</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Mongodb</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\project-1.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ESSA-AMAR/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com///github.com/ESSA-AMAR/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\project-2.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ESSA-AMAR/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ESSA-AMAR/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\project-3.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ESSA-AMAR/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ESSA-AMAR/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:amariissa71@gmail.com">amariissa71@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://ma.linkedin.com/in/essa-amari-88752a252">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+
+    <p class="section__text__p1">what about photography</p>
+    <h1 class="title">Explore</h1>
+
+    <div class="contaiiner">
+      <span class="slider" id="slider1"></span>
+      <span class="slider" id="slider2"></span>
+      <span class="slider" id="slider3"></span>
+      <span class="slider" id="slider4"></span>
+      <span class="slider" id="slider5"></span>
+      <span class="slider" id="slider6"></span>
+      <span class="slider" id="slider7"></span>
+
+      <div class="imgContainer">
+
+         <div class="slide_div" id="slide_1">
+          <img src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\1 (1).jpeg" alt="" class="img" id="img1">
+          <a href="#slider1" class="button" id="button1"></a>
+         </div>
+         <div class="slide_div" id="slide_2">
+          <img src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\1 (2).jpeg" alt="" class="img" id="img2">
+          <a href="#slider2" class="button" id="button2"></a>
+         </div>
+         <div class="slide_div" id="slide_3">
+          <img src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\1 (3).jpeg" alt="" class="img" id="img3">
+          <a href="#slider3" class="button" id="button3"></a>
+         </div>
+         <div class="slide_div" id="slide_4">
+          <img src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\1 (4).jpeg" alt="" class="img" id="img4">
+          <a href="#slider4" class="button" id="button4"></a>
+         </div>
+         <div class="slide_div" id="slide_5">
+          <img src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\1 (5).jpeg" alt="" class="img" id="img5">
+          <a href="#slider5" class="button" id="button5"></a>
+         </div>
+         <div class="slide_div" id="slide_6">
+          <img src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\1 (6).jpeg" alt="" class="img" id="img6">
+          <a href="#slider6" class="button" id="button6"></a>
+         </div>
+         <div class="slide_div" id="slide_7">
+          <img src="C:\Users\ESSA\Desktop\jobintech_portfolio\assets\1 (3).jpeg" alt="" class="img" id="img7">
+          <a href="#slider7" class="button" id="button7"></a>
+         </div>
+
+      </div>
+      
+  </div>
+  <script src="script.js"></script>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2023 Essa Amar. All Rights Reserved.</p>
+  </footer>
+
+  </body>
+</html>
